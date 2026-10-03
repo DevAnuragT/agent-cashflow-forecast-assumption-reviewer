@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: cashflow-forecast-assumption-reviewer
+version: 0.1.0
+description: Check forecast periods for explicit assumptions and scenario labels.
+skills:
+  - cashflow-forecast-assumption-reviewer-skill
+tools:
+  - review-cashflow-forecast-assumption-reviewer
+tags:
+  - finance
+  - evidence-driven

@@ -1,0 +1,24 @@
+{
+  "slug": "cashflow-forecast-assumption-reviewer",
+  "title": "Cashflow Forecast Assumption Reviewer",
+  "category": "finance",
+  "description": "Check forecast periods for explicit assumptions and scenario labels.",
+  "fields": {
+    "forecast_periods": {
+      "label": "forecast periods",
+      "kind": "list",
+      "minimum": 1
+    },
+    "assumptions": {
+      "label": "assumptions",
+      "kind": "list",
+      "minimum": 1
+    },
+    "scenario_label": {
+      "label": "scenario label",
+      "kind": "required",
+      "minimum": 0
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

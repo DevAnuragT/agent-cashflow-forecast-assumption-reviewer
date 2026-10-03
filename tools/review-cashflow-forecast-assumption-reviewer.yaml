@@ -1,0 +1,54 @@
+{
+  "name": "review-cashflow-forecast-assumption-reviewer",
+  "description": "Run Cashflow Forecast Assumption Reviewer",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "forecast_periods": {
+            "type": "array",
+            "description": "forecast periods"
+          },
+          "assumptions": {
+            "type": "array",
+            "description": "assumptions"
+          },
+          "scenario_label": {
+            "type": "string",
+            "description": "scenario label"
+          }
+        },
+        "required": [
+          "forecast_periods",
+          "assumptions",
+          "scenario_label"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-cashflow-forecast-assumption-reviewer.py",
+    "runtime": "python3"
+  }
+}
